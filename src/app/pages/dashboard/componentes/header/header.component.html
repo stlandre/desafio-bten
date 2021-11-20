@@ -1,0 +1,43 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="toggleSideBar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <span>App Logo</span>
+
+    <div fxFlex fxlayout="row" fxLayoutAlign="flex-end">
+      <ul fxlayout="row" fxLayoutGap="20px">
+        <li>
+          <button mat-icon-button>
+            <mat-icon>search</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-icon-button>
+            <mat-icon>notifications</mat-icon>
+          </button>
+        </li>
+        <li>
+          <!-- <a>{{logado}}</a> -->
+          <div *ngIf="user$ | async as user">
+            <a>{{user.userName}}</a>
+          </div>
+        </li>
+        <li>
+          <button mat-button [matMenuTriggerFor]="menu">
+            <!-- <mat-icon>person_outline</mat-icon> -->
+            <img src="https://www.kindpng.com/picc/m/192-1925162_login-icon-png-transparent-png.png" alt="">
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item [routerLink]="['/home']">
+              <mat-icon>exit_to_app</mat-icon>
+              Sign out
+            </button>
+          </mat-menu>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>

@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "joao",
+      "email": "joao@email.com",
+      "fullName": "Joao da Silva",
+      "password": "123"
+    },
+    {
+      "email": "jose@email.com",
+      "fullName": "Jose da Silva",
+      "userName": "jose",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "email": "maria@email.com",
+      "fullName": "Maria Aparecida",
+      "userName": "maria",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "email": "marta@email.com",
+      "fullName": "Marta da Costa",
+      "userName": "marta",
+      "password": "123",
+      "id": 4
+    }
+  ]
+}

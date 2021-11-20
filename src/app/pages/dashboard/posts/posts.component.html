@@ -1,0 +1,48 @@
+<div fxLayout="column" fxLayoutAlign="space-between" fxLayoutGap="20px">
+  <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+    <mat-card fxFlex="15">
+      <app-widget-card label="Unresolved" total="60"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="15">
+      <app-widget-card label="Overdue" total="16"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="15">
+      <app-widget-card label="Open" total="43"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="15">
+      <app-widget-card label="On hold" total="64"></app-widget-card>
+    </mat-card>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div>
+    <ul fxlayout="row" fxLayoutAlign="space-between" fxLayoutGap="0px">
+      <li fxFlex="75">
+        <app-widget-area></app-widget-area>
+      </li>
+      <li fxFlex="20">
+        <div fxLayout="column" fxFlexAlign="space-between">
+          <mat-card>
+            <app-widget-card label="Resolved" total="449"></app-widget-card>
+          </mat-card>
+          <mat-card>
+            <app-widget-card label="Received" total="426"></app-widget-card>
+          </mat-card>
+          <mat-card>
+            <app-widget-card label="Average first response time" total="33m"></app-widget-card>
+          </mat-card>
+          <mat-card>
+            <app-widget-card label="Average response time" total="3h 8m"></app-widget-card>
+          </mat-card>
+          <mat-card>
+            <app-widget-card label="Resolution within SLA" total="94%"></app-widget-card>
+          </mat-card>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<mat-divider></mat-divider>
